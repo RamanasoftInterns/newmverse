@@ -1,29 +1,27 @@
-import React from 'react'
-import './App.css'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import MarriageBrides from './Components/MarriageBrides'
-import Photos from './Components/Photos'
-import Profile from './Components/Profile'
-import VerseCard from './Components/VerseCard'
-import Footer from './Components/Footer'
-import VerseDetails from './Components/VerseDetails'
-import 'bootstrap/dist/css/bootstrap.min.css';
-const App = () => {
+import React from 'react';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import FeatureSection from './components/FeatureSection';
+import CardSection from './components/CardSection';
+import Pics from './components/pics';
+import Cards from './components/cards'
+import Perfect from './components/perfect'
+import Footer from './components/Footer';
+import './App.css';
+
+function App() {
   return (
-    <div>
-      <div className='app-container'>
-      <Navbar/>
-       <Home/>
-       <Photos/>
-       <Profile/>
-       <MarriageBrides/>
-       <VerseDetails/>
-       <VerseCard/>
-       <Footer/>
-      </div>
+    <div className="App">
+      <Header />
+       <HeroSection />
+      <FeatureSection />
+      <CardSection />
+      <Pics/>
+      <Cards/>
+      <Perfect/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
